@@ -1,7 +1,5 @@
 # Pattern-Matching
 
-## Pattern Matching Tool
-
 This code implements a pattern matching functionality that can identify whether a target string matches a specific pattern.
 
 ### Supported Patterns
