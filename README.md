@@ -1,10 +1,10 @@
 # Pattern-Matching
 
-**## Pattern Matching Tool**
+## Pattern Matching Tool
 
 This code implements a pattern matching functionality that can identify whether a target string matches a specific pattern.
 
-**### Supported Patterns**
+### Supported Patterns
 
 The supported pattern syntax includes:
 
@@ -12,9 +12,9 @@ The supported pattern syntax includes:
 - `*`: Matches a sequence of three repeated characters by default.
 - `*{N}`: Matches a sequence of N repeated characters, where N is a positive integer.
 
-**### Usage**
+### Usage
 
-1. Compile the code (e.g., using g++ pattern_matching.cpp -o pattern_matching).
+1. Compile the code (e.g., using g++ patternMatch.cpp -o patternMatch).
 2. Run the executable with the following syntax:
 
    ```bash
@@ -24,7 +24,7 @@ The supported pattern syntax includes:
    - `pattern`: The pattern to match against the target string.
    - `target`: The string to check for a match with the pattern.
 
-**### Examples**
+### Examples
 
 ```bash
 ./pattern_matching "++* hello"    # Output: Pattern Match is: false (Pattern doesn't match "hello")
@@ -32,14 +32,14 @@ The supported pattern syntax includes:
 ./pattern_matching "++* world"     # Output: Pattern Match is: false (Pattern doesn't match "world")
 ```
 
-**### Code Functionality**
+### Code Functionality
 
 The code defines two main functions:
 
 - `patternMatching(string str)`: This function takes the combined pattern and target string as input and performs the matching logic. It iterates through both the pattern and target string, checking for character matches and handling the different pattern constructs.
 - `main(int argc, char* argv[])`: This function parses command-line arguments, validates the input format, and calls `patternMatching` with the combined pattern and target string. It then outputs the result ("true" if there's a match, "false" otherwise).
 
-**### Additional Notes**
+### Additional Notes
 
 - The code currently assumes well-formed input. Error handling for invalid patterns or missing arguments could be added.
 - For efficiency, advanced algorithms like Knuth-Morris-Pratt (KMP) could be explored for pattern matching, especially when dealing with longer patterns or frequent matching operations.
